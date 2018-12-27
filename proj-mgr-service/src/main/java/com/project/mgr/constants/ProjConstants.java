@@ -12,7 +12,7 @@ public interface ProjConstants {
 	static String FORMATYMD = "yyyy-MM-dd";
 	
 	static String STATUS_COMPLETED = "COMPLETED";
-	static String USER_DELETE_FAILED_MESSAGE = "User deletion failed";
+	static String USER_DELETE_FAILED_MESSAGE = "User deletion failed.";
 	
 	static String TECH_ERROR_CODE = "1515";
 	static String TECH_ERROR_MESSAGE = "Techinal error, try again later";
