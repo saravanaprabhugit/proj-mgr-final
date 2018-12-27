@@ -99,6 +99,33 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>1.2.0</version>
+					<executions>
+						<execution>
+						<id>default</id>
+						<goals>
+						<goal>build</goal>
+						</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<imageName>sp-task-manager</imageName>
+						<dockerHost>http://172.18.2.50:2375</dockerHost>
+						<dockerDirectory>docker</dockerDirectory>
+						<resources>
+						<resource>
+						<targetPath>/</targetPath>
+						<directory>${project.build.directory}</directory>
+						<include>${project.build.finalName}.jar</include>
+						</resource>
+						</resources>
+					</configuration>
+			</plugin>
+	
 		</plugins>
 		</build>
 </project>
