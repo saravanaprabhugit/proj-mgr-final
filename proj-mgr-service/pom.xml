@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>proj-mgr-service</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>proj-mgr-service</name>
   <url>http://maven.apache.org</url>
@@ -105,7 +105,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
 			
-			<plugin>
+			 <plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.2.0</version>
